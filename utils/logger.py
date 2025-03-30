@@ -20,7 +20,7 @@ LOG_FOLDER: pathlib.Path = PROJECT_ROOT.joinpath("logs")  # Directory where logs
 LOG_FILE: pathlib.Path = LOG_FOLDER.joinpath("project_log.log")  # Path to the log file
 
 # Ensure the log folder exists or create it
-LOG_FOLDER.mkdir(exist_ok=True)
+(exist_ok=True)
 
 # Configure Loguru to write to the log file
 logger.add(LOG_FILE, level="INFO")
