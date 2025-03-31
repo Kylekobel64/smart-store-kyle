@@ -1,3 +1,15 @@
+# requirements.txt - list all the packages the project needs
+#
+# In this file, ignore hashes (#) - they are just used to create comments.
+# Lines starting with a hash are ignored when installing packages using this file. 
+
+# ======================================================
+# IMPORTANT: The contents of this file varies by project 
+# ======================================================
+
+# Some common dependencies are provided in this example.
+# Comment them in or out as you need them.
+
 # ======================================================
 # STEP A - CREATE A LOCAL PROJECT VIRTUAL ENV (.venv)
 # ======================================================
@@ -237,3 +249,5 @@ seaborn
 # Uncomment the necessary package(s) to send email or SMS alerts.
 # dc-mailer
 # dc-texter
+
+# git+https://github.com/denisecase/datafun_venv_checker.git#egg=datafun_venv_checker

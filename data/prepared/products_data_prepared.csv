@@ -1,4 +1,4 @@
-productid,productname,category,unitprice,yearadded,brand
+ProductID,ProductName,Category,UnitPrice,YearAdded,Brand
 101,laptop,Electronics,793.12,2024,Acer
 102,hoodie,Clothing,39.1,2020,FUBU
 103,cable,Electronics,22.76,2014,Southwire
