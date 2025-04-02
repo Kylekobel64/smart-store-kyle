@@ -186,3 +186,7 @@ dtype: int64
 2025-03-30 21:52:12.708 | INFO     | __main__:main:124 - ======================
 2025-03-30 21:52:12.708 | INFO     | __main__:main:125 - FINISHED data_prep.py
 2025-03-30 21:52:12.709 | INFO     | __main__:main:126 - ======================
+2025-04-01 20:30:52.263 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-01 20:30:52.264 | INFO     | __main__:main:43 - Starting data warehouse creation...
+2025-04-01 20:30:52.264 | INFO     | __main__:create_dw:31 - Data warehouse created successfully.
+2025-04-01 20:30:52.264 | INFO     | __main__:main:45 - Data warehouse creation complete.
