@@ -1,85 +1,63 @@
-# smart-store-kyle
+1. Get Started
+Verify You've Created a Local Project Virtual Environment
+This assumes you have a local project virtual environment on your machine in the .venv folder.
 
-Starter files to initialize the smart sales project.
+In VS Code, in your project repository folder, open a new terminal. (Terminal / New Terminal. I use the default on Mac and PowerShell on Windows.)
 
------
-## Project Setup Guide (2-Windows)
+Create a virtual environment:
 
-Run all commands from a PowerShell terminal in the root project folder.
+python -m venv .venv
+Verify a new folder named .venv is available. You must be able to see hidden files and folders on your machine.
 
-### Step 2A - Create a Local Project Virtual Environment
+⭐Activate the Virtual Environment (Always)
+Every time you open a new terminal and work on the project, be sure to activate the project virtual environment.
 
-```shell
-py -m venv .venv
-```
+In Windows / PowerShell:
 
-### Step 2B - Activate the Virtual Environment
+.\.venv\Scripts\activate
+In macOS/Linux terminal:
 
-```shell
-.venv\Scripts\activate
-```
+source .venv/bin/activate
+⭐Your .venv may appear in the terminal prompt when active.
 
-### Step 2C - Install Packages
+Verify You've Installed All Required Packages (As Needed)
+With the virtual environment activated, install the most current versions of the required packages which should be listed in your requirements.txt:
 
-```shell
-py -m pip install --upgrade -r requirements.txt
-```
+python -m pip install --upgrade -r requirements.txt
+Hit the up arrow to rerun your installation command.
 
-### Step 2D - Optional: Verify .venv Setup
+2. Implement and Test General DataScrubber Class
+⭐Run the Test Script
+In your VS Code terminal, ith your local project virtual environment active (and all necessary packages installed), run the test script with the following command.
 
-```shell
-py -m datafun_venv_checker.venv_checker
-```
+In Windows / PowerShell:
 
-### Step 2E - Run the initial project script
+py tests\test_data_scrubber.py
+In macOS/Linux terminal:
 
-```shell
-py scripts/data_prep.py
-```
+python3 tests\test_data_scrubber.py
+The first time you run it, all tests will not pass correctly.
 
------
+⭐Finish DataScrubber Until All Tests Pass Successfully
+Edit your scripts\data_scrubber.py file to complete the TODO actions. Verify by running the test script. Once all tests pass, you are ready to use the Data Scrubber in your data_prep.py (or other data preparation script).
 
-## Initial Package List
+⭐3. Complete all Data Preparation
+For this step, use pandas and the DataScrubber class as needed to clean and prepare each of the raw data files.
 
-- pip
-- loguru
-- ipykernel
-- jupyterlab
-- numpy
-- pandas
-- matplotlib
-- seaborn
-- plotly
-- pyspark==4.0.0.dev1
-- pyspark[sql]
-- git+https://github.com/denisecase/datafun-venv-checker.git#egg=datafun_venv_checker
-  
-  Data Cleaning Process (using Python pandas)
-1. Initial Data Inspection and Profiling
-df.info(): Check data types and identify missing values.
-df.describe(): Get summary statistics for numerical columns.
-df.head() and df.sample(): Inspect the structure and sample of the data.
-2. Handle Missing Data
-Identify missing values: df.isnull().sum()
-Drop missing values: df.dropna()
-Fill missing values: df.fillna(value)
-3. Remove Duplicates
-Identify duplicates: df.duplicated()
-Drop duplicates: df.drop_duplicates()
-4. Filter or Handle Outliers
-Identify outliers: df.describe() and box plot visualization.
-Filter outliers: df[df['column'] < upper_bound]
-5. Data Type Conversion and Standardization
-Convert data types: df.astype()
-Parse dates: pd.to_datetime(df['column'])
-6. Standardize and Format Data
-Apply string formatting: df['column'].str.lower() and df['column'].str.strip()
-Rename columns: df.rename(columns={'old_name': 'new_name'})
-7. Column Management
-Drop unnecessary columns: df.drop(columns=['column'])
-Reorder columns: df = df[['col1', 'col2', ...]]
-8. Data Integration and Aggregation
-Merge data: pd.merge(df1, df2, on='key_column')
-Aggregate data: df.groupby().agg()
-9. Final Quality Checks
-Check data consistency, completeness, and final structure.
+We have an example data_prep.py file provided that illustrates common cleaning tasks and how to use the DataScrubber class.
+
+Right now, all files are cleaned in a single scripts/data_prep.py file, but you may find it better to have smaller files, maybe one per raw data table.
+
+Given the examples and the work done previously, read, clean, and preprocess all your raw data files and save the prepared versions in the data/prepared folder.
+
+We recommand a naming scheme - following this will make future assignments a bit easier as we will use these file names and locations, however, you are welcome to vary the names. Your future scripts will need to correctly reflect your folder and file naming conventions. Changing is harder and better for learning. If new, please follow our folder and file naming conventions exactly.
+
+If your file is in the scripts folder, with a name of data_prep.py, you can run it with the appropriate command from a VS Code terminal open in the root project folder:
+
+In Windows / PowerShell:
+
+py scripts\data_prep.py
+In macOS/Linux terminal:
+
+python3 scripts\data_prep.py
+py scripts/create_dw.py

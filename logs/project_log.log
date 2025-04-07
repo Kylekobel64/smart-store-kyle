@@ -190,3 +190,44 @@ dtype: int64
 2025-04-01 20:30:52.264 | INFO     | __main__:main:43 - Starting data warehouse creation...
 2025-04-01 20:30:52.264 | INFO     | __main__:create_dw:31 - Data warehouse created successfully.
 2025-04-01 20:30:52.264 | INFO     | __main__:main:45 - Data warehouse creation complete.
+2025-04-06 21:01:56.514 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-06 21:01:56.520 | INFO     | __main__:main:59 - ======================
+2025-04-06 21:01:56.520 | INFO     | __main__:main:60 - STARTING data_prep.py
+2025-04-06 21:01:56.520 | INFO     | __main__:main:61 - ======================
+2025-04-06 21:01:56.520 | INFO     | __main__:main:63 - ========================
+2025-04-06 21:01:56.520 | INFO     | __main__:main:64 - Starting CUSTOMERS prep
+2025-04-06 21:01:56.520 | INFO     | __main__:main:65 - ========================
+2025-04-06 21:01:56.553 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-kyle\data\prepared\customers_data_prepared.csv
+2025-04-06 21:01:56.553 | INFO     | __main__:main:85 - ========================
+2025-04-06 21:01:56.553 | INFO     | __main__:main:86 - Starting PRODUCTS prep
+2025-04-06 21:01:56.553 | INFO     | __main__:main:87 - ========================
+2025-04-06 21:01:56.563 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-kyle\data\prepared\products_data_prepared.csv
+2025-04-06 21:01:56.563 | INFO     | __main__:main:103 - ========================
+2025-04-06 21:01:56.563 | INFO     | __main__:main:104 - Starting SALES prep
+2025-04-06 21:01:56.564 | INFO     | __main__:main:105 - ========================
+2025-04-06 21:01:56.581 | INFO     | __main__:save_prepared_data:55 - Data saved to C:\Projects\smart-store-kyle\data\prepared\sales_data_prepared.csv
+2025-04-06 21:01:56.581 | INFO     | __main__:main:124 - ======================
+2025-04-06 21:01:56.581 | INFO     | __main__:main:125 - FINISHED data_prep.py
+2025-04-06 21:01:56.581 | INFO     | __main__:main:126 - ======================
+2025-04-06 21:04:26.002 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-06 21:04:26.003 | INFO     | __main__:main:43 - Starting data warehouse creation...
+2025-04-06 21:04:26.003 | INFO     | __main__:create_dw:31 - Data warehouse created successfully.
+2025-04-06 21:04:26.003 | INFO     | __main__:main:45 - Data warehouse creation complete.
+2025-04-06 21:12:43.900 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-06 21:12:43.900 | INFO     | __main__:main:106 - Starting data warehouse creation...
+2025-04-06 21:12:43.912 | INFO     | __main__:create_customer_table:39 - customer table created.
+2025-04-06 21:12:43.919 | INFO     | __main__:create_product_table:54 - product table created.
+2025-04-06 21:12:43.925 | INFO     | __main__:create_sale_table:75 - sale table created.
+2025-04-06 21:12:43.926 | INFO     | __main__:create_dw:94 - Data warehouse created successfully.
+2025-04-06 21:12:43.926 | INFO     | __main__:main:108 - Data warehouse creation complete.
+2025-04-06 21:18:30.356 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-06 21:18:30.357 | INFO     | __main__:main:112 - Starting data warehouse creation...
+2025-04-06 21:18:30.368 | INFO     | __main__:create_customer_table:41 - customer table created.
+2025-04-06 21:18:30.375 | INFO     | __main__:create_product_table:58 - product table created.
+2025-04-06 21:18:30.381 | INFO     | __main__:create_sale_table:81 - sale table created.
+2025-04-06 21:18:30.382 | INFO     | __main__:create_dw:100 - Data warehouse created successfully.
+2025-04-06 21:18:30.382 | INFO     | __main__:main:114 - Data warehouse creation complete.
+2025-04-06 21:26:56.480 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-06 21:26:56.480 | ERROR    | __main__:load_data_to_db:177 - An unexpected error occurred: name 'create_schema' is not defined
+2025-04-06 21:27:49.303 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-06 21:27:49.304 | ERROR    | __main__:load_data_to_db:177 - An unexpected error occurred: name 'create_schema' is not defined
