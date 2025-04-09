@@ -251,3 +251,5 @@ seaborn
 # dc-texter
 
 # git+https://github.com/denisecase/datafun_venv_checker.git#egg=datafun_venv_checker
+
+pyspark

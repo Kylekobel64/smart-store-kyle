@@ -61,3 +61,5 @@ In macOS/Linux terminal:
 
 python3 scripts\data_prep.py
 py scripts/create_dw.py
+
+pyspark 
