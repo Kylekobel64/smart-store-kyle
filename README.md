@@ -62,8 +62,10 @@ In macOS/Linux terminal:
 python3 scripts\data_prep.py
 py scripts/create_dw.py
 
+4. ETL and DW Creatation/population
 pyspark 
 
+5 Power BI visualization and reporting 
 
 finally got a string of code to work for module 5! so proud!
 let
@@ -79,3 +81,17 @@ let
     )
 in
     Source
+
+Step 6 - Create DSN (SmartSalesDSN) and connect Microsoft Power BI Desktop to ODBC Data Source (SmartSalesDSN)
+![alt text](image.png)
+
+Use Power BI to create a "Top Customers" SQL query that will query total sales per customer
+![alt text](<Screenshot 2025-04-16 162200.png>)
+
+Use Power BI to create visualizations: 
+bar chart of Top Customers query,
+![alt text](<Top Customers-3.png>)
+ line chart of Sales Trends, 
+![alt text](<sales trend-2.png>)
+ and a slicer displaying product brands by category.
+![alt text](BRands-1.png)
