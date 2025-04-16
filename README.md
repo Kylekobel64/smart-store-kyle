@@ -63,3 +63,19 @@ python3 scripts\data_prep.py
 py scripts/create_dw.py
 
 pyspark 
+
+
+finally got a string of code to work for module 5! so proud!
+let
+    Source = Odbc.Query(
+        "dsn=SmartSalesDSN;",
+        "
+        SELECT c.Name, SUM(s.SaleAmount) AS total_spent
+        FROM sale s
+        JOIN customer c ON s.CustomerID = c.customerid
+        GROUP BY c.Name
+        ORDER BY total_spent DESC
+        "
+    )
+in
+    Source
