@@ -231,3 +231,6 @@ dtype: int64
 2025-04-06 21:26:56.480 | ERROR    | __main__:load_data_to_db:177 - An unexpected error occurred: name 'create_schema' is not defined
 2025-04-06 21:27:49.303 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
 2025-04-06 21:27:49.304 | ERROR    | __main__:load_data_to_db:177 - An unexpected error occurred: name 'create_schema' is not defined
+2025-04-20 20:45:57.805 | INFO     | utils.logger:<module>:36 - Logging to file: logs\project_log.log
+2025-04-20 20:45:57.806 | INFO     | __main__:main:209 - Starting OLAP Cubing process...
+2025-04-20 20:45:57.810 | INFO     | __main__:ingest_sales_data_from_dw:113 - Sales data successfully loaded from SQLite data warehouse.
