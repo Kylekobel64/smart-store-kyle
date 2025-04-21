@@ -99,6 +99,11 @@ bar chart of Top Customers query,
 
  OLAP
 .\.venv\Scripts\activate
+
 py scripts\olap_cubing.py
+
 py scripts\olap_goal_top_product_by_day.py
+
 ![alt text](<scripts/OLAP/Results/top product per day comparison.png>)
+
+I have Chat GPT to thank for everything. Thanks Chat GPT!!!!!!
