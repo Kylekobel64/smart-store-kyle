@@ -95,3 +95,10 @@ bar chart of Top Customers query,
 ![alt text](<sales trend.png>)
  and a slicer displaying product brands by category.
 ![alt text](BRands.png)
+
+
+ OLAP
+.\.venv\Scripts\activate
+py scripts\olap_cubing.py
+py scripts\olap_goal_top_product_by_day.py
+![alt text](<scripts/OLAP/Results/top product per day comparison.png>)
