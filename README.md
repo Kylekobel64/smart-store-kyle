@@ -98,6 +98,24 @@ bar chart of Top Customers query,
 
 
  OLAP
+ Section 1. The Business Goal
+What is the best performing product on any given day of the week.
+Section 2. Data Source
+i used my original data warehouse and converted it into a cube so i could use python
+
+Section 3. Tools
+i used vs code and chat gpt
+Section 4. Workflow & Logic
+see below chat gpt
+Section 5. Results
+see below 
+clearly the laptop is the best selling product period 
+Section 6: Suggested Business Action 
+stock more laptops or maybe try to offer different laptops to broaden the customer base
+Section 7. Challenges
+I literally do not know what im doing and i used chat gpt to help me get to the end goal. 
+Always remember to thank your AI partner! 
+
 .\.venv\Scripts\activate
 
 py scripts\olap_cubing.py
