@@ -90,8 +90,8 @@ Use Power BI to create a "Top Customers" SQL query that will query total sales p
 
 Use Power BI to create visualizations: 
 bar chart of Top Customers query,
-![alt text](<Top Customers-3.png>)
+![alt text](<Top Customers.png>)
  line chart of Sales Trends, 
-![alt text](<sales trend-2.png>)
+![alt text](<sales trend.png>)
  and a slicer displaying product brands by category.
-![alt text](BRands-1.png)
+![alt text](BRands.png)
